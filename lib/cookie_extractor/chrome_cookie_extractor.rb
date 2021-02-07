@@ -16,7 +16,7 @@ module CookieExtractor
         result << [ row['host_key'],
           true_false_word(is_domain_wide(row['host_key'])),
           row['path'],
-          true_false_word(row['secure']),
+          true_false_word(row['is_secure']),
           row['expires_utc'],
           row['name'],
           row['value']
